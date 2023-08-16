@@ -1,7 +1,20 @@
-type WelcomeProps = {
-  name: string;
+type FrameworkColorPair = {
+  framework: string;
+  color: string;
 };
 
-export const Welcome = (props: WelcomeProps) => {
-  return <p>Welcome {props.name}!</p>;
+type FrameworkListProps = {
+  frameworks: FrameworkColorPair[];
+};
+
+export const FrameworkList: React.FC<FrameworkListProps> = ({ frameworks }) => {
+  return (
+    <div>
+      {frameworks.map((pair, index) => (
+        <h3 key={index} style={{ color: pair.color }}>
+          {pair.framework}
+        </h3>
+      ))}
+    </div>
+  );
 };

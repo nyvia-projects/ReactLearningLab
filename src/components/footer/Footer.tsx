@@ -1,7 +1,13 @@
-export const Footer = () => {
+import React from "react";
+
+const Footer: React.FC = () => {
   return (
-    <div>
-      <h1>Footer</h1>
-    </div>
+    <footer>
+      <p>
+        &copy; {new Date().getFullYear()} Nyvia Projects. All rights reserved.
+      </p>
+    </footer>
   );
 };
+
+export default Footer;
