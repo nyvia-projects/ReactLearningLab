@@ -1,4 +1,4 @@
-#main-content {
+#framework-container {
   display: block; /* ensure the block-level display */
   text-align: center;
   color: white;
@@ -22,7 +22,7 @@
     /* more pronounced inner shadow */ 0 8px 20px rgba(0, 0, 0, 0.4); /* slightly softer outer shadow */
 }
 
-#main-content h2 {
+#framework-container h2 {
   font-size: 20px;
   margin: 0;
   margin-bottom: 10px;
