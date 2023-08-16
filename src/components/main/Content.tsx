@@ -1,3 +1,5 @@
+import "./Content.css";
+
 type FrameworkColorPair = {
   framework: string;
   color: string;
