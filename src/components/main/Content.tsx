@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button } from "./Button";
+import { ClearButton, GenerateButton } from "./Button";
 import "./Content.css";
 import { FrameworkList } from "./FrameworkList";
 
@@ -71,13 +71,22 @@ export const FrameworkContainer = () => {
     const newPairs = Array.from({ length: 10 }, () => generateRandomPair());
     setFrameworkColorPairs(newPairs);
   };
+  const handleClear = () => {
+    setFrameworkColorPairs([]);
+  };
   return (
     <div id="framework-container">
       <h2>Colored Web Frameworks:</h2>
       <FrameworkList frameworks={frameworkColorPairs} />
-      <Button
+      <GenerateButton
         handleClick={event => {
           handleGenerate();
+          console.log(event.type);
+        }}
+      />
+      <ClearButton
+        handleClick={event => {
+          handleClear();
           console.log(event.type);
         }}
       />
