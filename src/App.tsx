@@ -9,6 +9,8 @@ import { Clicked } from "./components/state/Clicked";
 import { Counter, Counter2 } from "./components/state/Counter";
 import { Box1, Box2 } from "./context/Box";
 import { ThemeContextProvider } from "./context/ThemeContext";
+import { EngineContextProvider } from "./context/EngineContext";
+import { Engine } from "./context/Engine";
 
 function App() {
   return (
@@ -35,6 +37,9 @@ function App() {
         <Box1 />
         <Box2 />
       </ThemeContextProvider>
+      <EngineContextProvider>
+        <Engine />
+      </EngineContextProvider>
       <Footer></Footer>
     </div>
   );
