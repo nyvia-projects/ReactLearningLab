@@ -6,11 +6,13 @@ import { Input } from "./components/state/Input";
 
 import Navbar from "./components/navbar/Navbar";
 import { Clicked } from "./components/state/Clicked";
-import { Counter, Counter2 } from "./components/state/Counter";
+import { Counter1, Counter2 } from "./components/state/Counter";
 import { Box1, Box2 } from "./context/Box";
 import { ThemeContextProvider } from "./context/ThemeContext";
 import { EngineContextProvider } from "./context/EngineContext";
 import { Engine } from "./context/Engine";
+import { DomRef } from "./components/ref/DomRef";
+import { MutableRef } from "./components/ref/MutableRef";
 
 function App() {
   return (
@@ -31,7 +33,7 @@ function App() {
         }}
       />
       <Clicked />
-      <Counter />
+      <Counter1 />
       <Counter2 />
       <ThemeContextProvider>
         <Box1 />
@@ -40,6 +42,8 @@ function App() {
       <EngineContextProvider>
         <Engine />
       </EngineContextProvider>
+      <DomRef />
+      <MutableRef />
       <Footer></Footer>
     </div>
   );
