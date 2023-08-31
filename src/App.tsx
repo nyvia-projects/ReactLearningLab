@@ -16,6 +16,8 @@ import { MutableRef } from "./components/ref/MutableRef";
 import { Counter3 } from "./components/class/Counter";
 import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
+import { ListComponent } from "./components/generics/ListComponent";
+import { LightbulbContainer } from "./components/restriction/LightbulbContainer";
 
 function App() {
   return (
@@ -49,6 +51,8 @@ function App() {
       <DomRef />
       <MutableRef />
       <Private isLoggedIn={true} component={Profile} />
+      <ListComponent />
+      <LightbulbContainer />
       <Footer></Footer>
     </div>
   );

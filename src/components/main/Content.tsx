@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ClearButton, GenerateButton } from "./Button";
+import { ClearButton, GenerateButton } from "./Buttons";
 import "./Content.css";
 import { FrameworkList } from "./FrameworkList";
 

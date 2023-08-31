@@ -1,0 +1,54 @@
+/* ListComponent.css */
+.container {
+  font-family: "Arial", sans-serif;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.list-container {
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.list-container > div {
+  /* Assuming List renders as a div */
+  border-bottom: 1px solid #dcdcdc;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.list-container > div:hover {
+  background-color: #f5f5f5;
+}
+
+.list-container > div:last-child {
+  border-bottom: none;
+}
+
+.clicked-item {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f7f9fc;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+}
+
+h4 {
+  color: #666;
+}
+
+p {
+  color: #444;
+}
