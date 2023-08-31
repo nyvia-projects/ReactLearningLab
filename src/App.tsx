@@ -13,6 +13,7 @@ import { EngineContextProvider } from "./context/EngineContext";
 import { Engine } from "./context/Engine";
 import { DomRef } from "./components/ref/DomRef";
 import { MutableRef } from "./components/ref/MutableRef";
+import { Counter3 } from "./components/class/Counter";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
       <Clicked />
       <Counter1 />
       <Counter2 />
+      <Counter3 message="Count:" />
       <ThemeContextProvider>
         <Box1 />
         <Box2 />

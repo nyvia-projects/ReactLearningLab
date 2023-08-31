@@ -5,7 +5,8 @@ type CounterState = {
 };
 
 const initialState: CounterState = { count: 0 };
-export const Counter = () => {
+
+export const Counter1 = () => {
   const [count, setCount] = useState<CounterState>(initialState);
   return (
     <>
