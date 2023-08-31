@@ -14,6 +14,8 @@ import { Engine } from "./context/Engine";
 import { DomRef } from "./components/ref/DomRef";
 import { MutableRef } from "./components/ref/MutableRef";
 import { Counter3 } from "./components/class/Counter";
+import { Private } from "./components/auth/Private";
+import { Profile } from "./components/auth/Profile";
 
 function App() {
   return (
@@ -46,6 +48,7 @@ function App() {
       </EngineContextProvider>
       <DomRef />
       <MutableRef />
+      <Private isLoggedIn={true} component={Profile} />
       <Footer></Footer>
     </div>
   );
