@@ -1,23 +1,23 @@
 import "./App.css";
 import Footer from "./components/footer/Footer";
 import { FrameworkContainer } from "./components/main/Content";
-import { Container } from "./components/state/Container";
-import { Input } from "./components/state/Input";
+import { Container } from "./components/learning/state/Container";
+import { Input } from "./components/learning/state/Input";
 
 import Navbar from "./components/navbar/Navbar";
-import { Clicked } from "./components/state/Clicked";
-import { Counter1, Counter2 } from "./components/state/Counter";
-import { Box1, Box2 } from "./context/Box";
-import { ThemeContextProvider } from "./context/ThemeContext";
-import { EngineContextProvider } from "./context/EngineContext";
-import { Engine } from "./context/Engine";
-import { DomRef } from "./components/ref/DomRef";
-import { MutableRef } from "./components/ref/MutableRef";
-import { Counter3 } from "./components/class/Counter";
-import { Private } from "./components/auth/Private";
-import { Profile } from "./components/auth/Profile";
-import { ListComponent } from "./components/generics/ListComponent";
-import { LightbulbContainer } from "./components/restriction/LightbulbContainer";
+import { Clicked } from "./components/learning/state/Clicked";
+import { Counter1, Counter2 } from "./components/learning/state/Counter";
+import { Box1, Box2 } from "./components/learning/context/Box";
+import { ThemeContextProvider } from "./components/learning/context/ThemeContext";
+import { EngineContextProvider } from "./components/learning/context/EngineContext";
+import { Engine } from "./components/learning/context/Engine";
+import { DomRef } from "./components/learning/ref/DomRef";
+import { MutableRef } from "./components/learning/ref/MutableRef";
+import { Counter3 } from "./components/learning/class/Counter";
+import { Private } from "./components/learning/auth/Private";
+import { Profile } from "./components/learning/auth/Profile";
+import { ListComponent } from "./components/learning/generics/ListComponent";
+import { LightbulbContainer } from "./components/learning/restriction/LightbulbContainer";
 
 function App() {
   return (
